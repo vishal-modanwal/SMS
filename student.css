@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#studentForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#studentForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#studentForm input {
+    width: 200px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#studentForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#studentForm button:hover {
+    background-color: #45a049;
+}
+
+#studentsList {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* fixed height to show roughly 5 rows of data; header is outside tbody */
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* make the tbody scrollable separately so the header stays fixed */
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#studentTable thead,
+#studentTable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#studentTable tbody {
+    display: block;
+    max-height: 240px; /* about 5 rows at 48px each */
+    overflow-y: auto;
+}
+
+
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#studentTable thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#studentTable thead th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#studentTable tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#studentTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+#studentTable tbody td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+#showTotal {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#showTotal:hover {
+    background-color: #0b7dda;
+}
+
+#totalDisplay {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+#deleteRoll {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#deleteBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#deleteBtn:hover {
+    background-color: #da190b;
+}
+
+.btn-update, .btn-delete {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-update {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-update:hover {
+    background-color: #0b7dda;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+}
+body{
+    background-color: rgb(238, 178, 178);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#main_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
